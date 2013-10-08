@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="button">Vibrate!</string>
+    <string name="text">SOS</string>
+    <string name="prompt">Enter message</string>
+    <string name="app_name">Morse Code Vibrate</string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:id="@+id/RelativeLayout01" 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent" 
+				xmlns:android="http://schemas.android.com/apk/res/android"
+				xmlns:app="http://schemas.android.com/apk/res/com.alex.vmc">
+		<com.admob.android.ads.AdView
+          android:id="@+id/ad1"
+          android:layout_width="fill_parent" 
+		  android:layout_height="wrap_content"   
+          app:backgroundColor="#000000"
+          app:primaryTextColor="#FFFFFF"
+          app:secondaryTextColor="#CCCCCC"
+          app:keywords="Morse Code">
+    </com.admob.android.ads.AdView>			
+	<TextView 	android:text="@string/prompt" 
+				android:layout_below="@+id/ad1"
+				android:id="@+id/prompt" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content">
+	</TextView>
+	<EditText 	android:layout_below="@+id/prompt" 
+				android:layout_width="fill_parent" 
+				android:text="@string/text" 
+				android:layout_height="wrap_content" 
+				android:id="@+id/text">
+	</EditText>
+	<Button 	android:layout_below="@+id/text" 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content" 
+				android:id="@+id/button" 
+				android:text="@string/button">
+	</Button>
+	<com.admob.android.ads.AdView
+          android:id="@+id/ad2"
+          android:layout_below="@+id/button"
+          android:layout_width="fill_parent" 
+		  android:layout_height="wrap_content"   
+          app:backgroundColor="#000000"
+          app:primaryTextColor="#FFFFFF"
+          app:secondaryTextColor="#CCCCCC"
+          app:keywords="Vibrate Notification">
+    </com.admob.android.ads.AdView>
+	
+</RelativeLayout>

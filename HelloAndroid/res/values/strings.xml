@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="network">Network Location:</string>
+    <string name="buttonStart">Start Logging</string>
+    <string name="buttonStart2">Start Offline Logging</string>
+    <string name="buttonStop">Stop Logging</string>
+    <string name="netlat">    Latitude:</string>
+    <string name="netlong">    Longitude:</string>
+    <string name="gps">GPS Location:</string>
+    <string name="gpslat">    Latitude:</string>
+    <string name="gpslong">    Longitude:</string>
+    <string name="gpsalt">    Altitude:</string>
+    <string name="nmea">NMEA Data from GPS:\n</string>
+    <string name="sentences">Types of NMEA Sentence</string>
+    <string name="app_name">Alex\'s \"Hello, World\" Application</string>
+</resources>

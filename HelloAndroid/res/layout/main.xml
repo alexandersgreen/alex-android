@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:id="@+id/RelativeLayout01" 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent" 
+				xmlns:android="http://schemas.android.com/apk/res/android">
+	<TextView android:layout_width="wrap_content" 
+		      android:layout_height="wrap_content" 
+		      android:text="@string/network" 
+		      android:id="@+id/network">
+	</TextView>
+	
+	<TextView android:layout_below="@+id/network" 
+			  android:layout_width="wrap_content" 
+			  android:layout_height="wrap_content" 
+			  android:text="@string/netlat"
+			  android:id="@+id/netlat">
+	</TextView>
+	<TextView android:layout_below="@+id/netlat" 
+			  android:layout_width="wrap_content" 
+			  android:layout_height="wrap_content" 
+			  android:text="@string/netlong" 
+			  android:id="@+id/netlong">
+	</TextView>
+	
+	<Button android:layout_width="wrap_content" 
+			android:id="@+id/serviceButton" 
+			android:text="@string/buttonStart" 
+			android:layout_height="wrap_content" 
+			android:layout_below="@+id/netlong">
+	</Button>
+	<Button android:layout_width="wrap_content" 
+			android:id="@+id/serviceButton2" 
+			android:text="@string/buttonStart2" 
+			android:layout_height="wrap_content" 
+			android:layout_below="@+id/netlong"
+			android:layout_toRightOf="@+id/serviceButton">
+	</Button>
+
+	<TextView android:layout_width="wrap_content" 
+			  android:layout_height="wrap_content" 
+			  android:text="@string/gps" 
+			  android:id="@+id/gps" android:layout_below="@+id/serviceButton">
+	</TextView>
+	<TextView android:layout_below="@+id/gps" 
+			  android:layout_width="wrap_content" 
+			  android:layout_height="wrap_content" 
+			  android:text="@string/gpslat" 
+			  android:id="@+id/gpslat">
+	</TextView>
+	<TextView android:layout_below="@+id/gpslat" 
+			  android:layout_width="wrap_content" 
+			  android:layout_height="wrap_content" 
+			  android:text="@string/gpslong" 
+			  android:id="@+id/gpslong">
+	</TextView>
+	<TextView android:layout_below="@+id/gpslong" 
+			  android:layout_width="wrap_content" 
+			  android:layout_height="wrap_content" 
+			  android:text="@string/gpsalt" 
+			  android:id="@+id/gpsalt">
+	</TextView>
+	<TextView android:text="@string/sentences" 
+			  android:layout_below="@+id/gpsalt" 
+			  android:layout_width="wrap_content" 
+			  android:layout_height="wrap_content" 
+			  android:id="@+id/sentences">
+	</TextView>
+	<android.opengl.GLSurfaceView 
+	               android:layout_below="@+id/sentences" 
+		  		   android:layout_width="wrap_content" 
+		  		   android:layout_height="25mm" 
+		  		   android:id="@+id/opengl">
+	</android.opengl.GLSurfaceView>
+	<ScrollView android:layout_width="wrap_content" 
+				android:layout_below="@+id/opengl" 
+				android:layout_height="wrap_content" 
+				android:id="@+id/ScrollView01">
+		<TextView android:text="@string/nmea" 
+				  android:id="@+id/nmea" 
+				  android:layout_width="wrap_content" 
+				  android:layout_height="wrap_content">
+		</TextView>
+	</ScrollView>
+
+
+</RelativeLayout>
